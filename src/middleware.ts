@@ -11,8 +11,6 @@ export function middleware(request: NextRequest) {
       headers: requestHeaders,
     },
   });
-  console.log("lfsz middle", response);
-
   // Set a new response header `x-hello-from-middleware2`
   //   response.headers.set("x-hello-from-middleware2", "hello");
   return response;
